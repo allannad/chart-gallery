@@ -14,9 +14,7 @@ pie_data = [
 ]
 
 labels = [i["company"] for i in pie_data]
-#print(labels)
 sizes = [i["market_share"] for i in pie_data]
-#print(sizes)
 
 fig1, ax1 = plt.subplots()
 ax1.pie(sizes, labels=labels, autopct='%1.1f%%', shadow=True, startangle=90)
